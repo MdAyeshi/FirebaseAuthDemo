@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdjubairayeshi.firebaseauthdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewInfoTag"
+        android:layout_width="253dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Already Registerd.... Click here."
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <EditText
+        android:id="@+id/editTextEmailLogin"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Enter Your Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <EditText
+        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextEmailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="34dp"
+        android:onClick="onClick"
+        android:text="Register User"
+        app:layout_constraintLeft_toLeftOf="@+id/editTextPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="82dp"
+        android:text="User Registration"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
